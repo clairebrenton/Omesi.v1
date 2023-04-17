@@ -79,30 +79,30 @@ const AddProfile = ({ id, setProfileId }) => {
       )}
         */}
       <Text style={{ fontSize: 24, fontWeight: 'bold', marginBottom: 16 }}>
-        Profile Planner
+        Profile
       </Text>
 
       <Text style={{ fontSize: 16, marginBottom: 16 }}>
-        Create future profiles to help stay organized as you spend.
+        Enter information about you below.
       </Text>
 
       <TextInput
         style={{flexDirection: 'row', alignItems: 'center', padding: 8, marginBottom: 8 }}
-        placeholder="Profile Name"
+        placeholder="Name"
         value={name}
         onChangeText={(text) => setName(text)}
       />
 
       <TextInput
         style={{flexDirection: 'row', alignItems: 'center', padding: 8, marginBottom: 8 }}
-        placeholder="Profile Amount"
+        placeholder="Age"
         value={amount}
         onChangeText={(text) => setAmount(text)}
       />
 
       <TextInput
         style={{ flexDirection: 'row', alignItems: 'center', padding: 8, marginBottom: 16 }}
-        placeholder="Date in form mm/dd/yyy"
+        placeholder="Doctor Email"
         value={date}
         onChangeText={(text) => setDate(text)}
       />

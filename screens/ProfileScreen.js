@@ -139,6 +139,7 @@ import AddProfile from "./AddProfile";
 import { doc, getDoc, query, where, collection, getDocs } from "firebase/firestore";
 import { sendEmailVerification, getAuth, onAuthStateChanged } from 'firebase/auth'
 import { View } from "react-native";
+import NavBar from '../components/NavBar';
 
 
 function ProfileScreen() {
@@ -153,7 +154,6 @@ function ProfileScreen() {
        <View style={{ flex: 1, alignItems: 'center', justifyContent: 'center' }}>
   
           <AddProfile id={profileId} setProfileId={setProfileId} />
-       
       </View>
     </>
   );
