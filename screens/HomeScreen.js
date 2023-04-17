@@ -3,8 +3,10 @@ import React from 'react'
 import { StyleSheet, Text, TouchableOpacity, View } from 'react-native'
 import { auth } from '../firebase'
 import { getAuth } from "firebase/auth";
-import Header from './Header';
+import NavBar from '../components/NavBar';
 
+// Dashboard
+/*
 const HomeScreen = () => {
   const navigation = useNavigation()
 
@@ -27,6 +29,7 @@ const HomeScreen = () => {
       >
         <Text style={styles.buttonText}>Sign out</Text>
       </TouchableOpacity>
+      <NavBar navigation={navigation} />
     </View>
   )
 }
@@ -53,3 +56,16 @@ const styles = StyleSheet.create({
     fontSize: 16,
   },
 })
+
+*/
+
+export default function HomeScreen({ navigation }) {
+  return (
+      <View style={{ flex: 1, alignItems: 'center', justifyContent: 'center' }}>
+          <Text
+              onPress={() => navigation.navigate('Home')}
+              style={{ fontSize: 26, fontWeight: 'bold' }}>Home Screen</Text>
+              <NavBar navigation={navigation} />
+      </View>
+  );
+}
